@@ -119,7 +119,8 @@ useEffect(() => {
     <main className="app">
       <section className="todo-container">
         <header className="todo-header">
-          <p className="eyebrow">Daily productivity</p>
+          <p className="eyebrow">Plan your day and boost productivity
+          </p>
           <h1>My Todo List</h1>
           <p className="subtitle">
             Organize your day, track your progress, and get things done.
