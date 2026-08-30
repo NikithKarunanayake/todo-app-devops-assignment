@@ -3,18 +3,34 @@ import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState(() => {
+  try {
     const savedTasks = localStorage.getItem('todo-tasks');
-    return savedTasks ? JSON.parse(savedTasks) : [];
-  });
 
-  const [taskInput, setTaskInput] = useState('');
-  const [filter, setFilter] = useState('all');
-  const [editingId, setEditingId] = useState(null);
-  const [editingText, setEditingText] = useState('');
+    if (!savedTasks) {
+      return [];
+    }
 
-  useEffect(() => {
+    const parsedTasks = JSON.parse(savedTasks);
+
+    return Array.isArray(parsedTasks) ? parsedTasks : [];
+  } catch (error) {
+    console.error('Unable to load saved tasks:', error);
+    return [];
+  }
+});
+
+const [taskInput, setTaskInput] = useState('');
+const [filter, setFilter] = useState('all');
+const [editingId, setEditingId] = useState(null);
+const [editingText, setEditingText] = useState('');
+
+useEffect(() => {
+  try {
     localStorage.setItem('todo-tasks', JSON.stringify(tasks));
-  }, [tasks]);
+  } catch (error) {
+    console.error('Unable to save tasks:', error);
+  }
+}, [tasks]);
 
   const addTask = (event) => {
     event.preventDefault();
