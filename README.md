@@ -1,16 +1,132 @@
-# React + Vite
+# Todo Application – Git & DevOps Team Collaboration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![CI](https://github.com/NikithKarunanayake/todo-app-devops-assignment/actions/workflows/ci.yml/badge.svg)
 
-Currently, two official plugins are available:
+A responsive Todo List web application developed as part of the Advanced Git & DevOps Team Collaboration assignment. The project demonstrates feature-based Git development, pull requests, merge conflict resolution, automated CI/CD using GitHub Actions, and deployment to GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Application
 
-## React Compiler
+**Live Website:**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://nikithkarunanayake.github.io/todo-app-devops-assignment/
 
-## Expanding the ESLint configuration
+**GitHub Repository:**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://github.com/NikithKarunanayake/todo-app-devops-assignment
+---
+
+## Student Information
+
+Although this assignment was designed as a team collaboration task, this implementation was completed individually.
+
+**Student:** Nikith Karunanayake
+
+**Student ID:** ITBIN-2211-0200
+
+**Role:** Full-Stack Developer & DevOps Engineer
+
+### Individual Contribution
+
+I completed the overall development and DevOps workflow for the project, including:
+
+- Designed and developed the Todo application
+- Implemented the user interface and responsive styling
+- Implemented task creation and deletion
+- Implemented task editing functionality
+- Implemented task completion functionality
+- Implemented All, Active, and Completed filters
+- Implemented task counter functionality
+- Implemented browser localStorage persistence
+- Added error handling for localStorage loading and saving
+- Created and managed Git branches
+- Created feature branches for different development tasks
+- Created and merged Pull Requests
+- Demonstrated merge conflict creation and resolution
+- Configured GitHub Actions for continuous integration
+- Configured GitHub Actions for deployment
+- Deployed the application using GitHub Pages
+- Tested the application locally and on the deployed website
+- Prepared the project documentation
+
+---
+
+# Project Overview
+
+The project is a simple and responsive Todo List application that allows users to manage daily tasks.
+
+Users can add tasks, edit existing tasks, mark tasks as completed, delete tasks, and filter tasks based on their completion status.
+
+Task data is stored in the browser using `localStorage`, allowing tasks to remain available after refreshing the page.
+
+The project was also used to demonstrate professional Git and DevOps practices, including feature branches, Pull Requests, merge conflict resolution, Continuous Integration, and Continuous Deployment.
+
+---
+
+# Features
+
+## Task Management
+
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed
+- Delete tasks
+- View the total number of tasks
+
+## Task Filtering
+
+The application provides three filters:
+
+- **All** – displays all tasks
+- **Active** – displays incomplete tasks
+- **Completed** – displays completed tasks
+
+## Data Persistence
+
+Tasks are stored in the browser using `localStorage`.
+
+This means that task data remains available after refreshing the browser.
+
+The application also includes error handling when loading or saving localStorage data so that invalid stored data does not cause the application to crash.
+
+## Responsive User Interface
+
+The application provides a responsive interface suitable for different screen sizes and devices.
+
+---
+
+# Technologies Used
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+- Git
+- GitHub
+- GitHub Actions
+- GitHub Pages
+- Browser localStorage
+
+---
+
+# Project Structure
+
+```text
+todo-app/
+│
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── deploy.yml
+│
+├── public/
+│
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── package.json
+├── package-lock.json
+└── README.md
