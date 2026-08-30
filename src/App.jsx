@@ -73,10 +73,10 @@ function App() {
     <main className="app">
       <section className="todo-container">
         <header className="todo-header">
-          <p className="eyebrow">Stay organized</p>
+          <p className="eyebrow">Daily productivity</p>
           <h1>My Todo List</h1>
           <p className="subtitle">
-            Keep track of your tasks and get things done.
+            Organize your day, track your progress, and get things done.
           </p>
         </header>
 
